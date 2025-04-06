@@ -1,0 +1,282 @@
+/* style.css */
+
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #222;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Header */
+  header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #e0e0e0;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #007BFF;
+  }
+ /* Team Section */
+.team {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.team h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #007BFF;
+}
+
+/* Grid layout */
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* Each team card styled as a link */
+.team-member {
+  text-align: center;
+  max-width: 200px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+.team-member:hover {
+  transform: scale(1.05);
+}
+
+/* Rectangular images */
+.team-member img {
+  width: 200px;
+  height: 220px;
+  object-fit: cover;
+  border: 3px solid #007BFF;
+  border-radius: 10px;
+}
+
+/* Name and role styling */
+.team-member h3 {
+  margin-top: 15px;
+  color: #007BFF;
+}
+.team-member p {
+  font-size: 14px;
+  color: #555;
+}
+/* Our Story Section */
+.our-story {
+  background-color: #f0f8ff;
+  padding: 60px 20px;
+}
+
+.story-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Slideshow styles */
+.story-slider {
+  position: relative;
+  width: 480px;
+  max-width: 100%;
+}
+
+.slides {
+  display: none;
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #6d7d8f;
+}
+
+/* Navigation buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 10px;
+  color: white;
+  background-color: #0676ff;
+  border: none;
+  font-size: 18px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: background 0.3s ease;
+  z-index: 1;
+}
+.prev:hover, .next:hover {
+  background-color: #0056b3;
+}
+
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+
+/* Story text */
+.story-text {
+  max-width: 500px;
+}
+
+.story-text h2 {
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.story-text h3 {
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+.story-text p {
+  line-height: 1.6;
+  color: #333;
+}
+
+
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(to right, #e6f0ff, #ffffff);
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    color: #007BFF;
+  }
+  
+  .hero p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+  
+  .btn-primary {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Products Section */
+  .products {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 280px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* About & Contact Section */
+  .about, .contact {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .contact a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    text-align: center;
+    color: #555;
+  }
+  

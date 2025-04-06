@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yantrika - Neaurabots</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #f8f9fb;
+      color: #222;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #007BFF;
+    }
+
+    .gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .gallery img {
+      height: 250px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      flex-shrink: 0;
+    }
+
+    .details {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Yantrika</h1>
+
+    <div class="gallery">
+      <img src="yantrika1.jpg" alt="Yantrika View 1">
+      <img src="yantrika2.jpg" alt="Yantrika View 2">
+      <img src="yantrika3.jpg" alt="Yantrika View 3">
+    </div>
+
+    <div class="details">
+      <h2>Overview</h2>
+      <p>Yantrika is a compact mobile robot built for smart home automation and environmental monitoring. It can move autonomously around your house and display real-time air quality metrics on a built-in screen.</p>
+
+      <h2>Key Features</h2>
+      <ul>
+        <li>Air quality, humidity, temperature, and CO sensors</li>
+        <li>ESP32 powered microcontroller for wireless control</li>
+        <li>Mobile app connectivity for navigation and data</li>
+        <li>Display screen to show real-time environmental stats</li>
+        <li>Rechargeable battery and smart charging dock support</li>
+      </ul>
+
+      <h2>Applications</h2>
