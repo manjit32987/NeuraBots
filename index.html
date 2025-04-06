@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- AOS Animation CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Neaurabots</title>
@@ -15,7 +18,7 @@
     <div class="container header-container">
       <div class="logo">
         <img src="images/logoweb.png" alt="Neaurabots Logo">
-        <span>Neaurabots</span>
+        <span>Neurabots</span>
       </div>
       <nav>
         <ul class="nav-links">
@@ -30,34 +33,80 @@
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="home">
-    <div class="container">
-      <h1>Innovating the Future with Robotics</h1>
-      <p>Robots • Flight Controllers • Microcontrollers</p>
-      <a href="#products" class="btn-primary">Explore Products</a>
+  <!-- Hero Slideshow -->
+<section class="hero-slideshow" id="home">
+    <div class="slide active" style="background-image: url('images/yantrika.png');">
+      <div class="hero-text left">
+        <h1>Yantrika</h1>
+        <p>Smart Air Monitoring & Home Automation Robot</p>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('images/atmos.jpg');">
+      <div class="hero-text right">
+        <h1>Atmos</h1>
+        <p>Next-Gen Air Purification Robot</p>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('images/story1.jpg');">
+      <div class="hero-text left">
+        <h1>Sentinel</h1>
+        <p>AI Surveillance with Night Vision</p>
+      </div>
+    </div>
+    <!-- Add more slides if needed -->
+  
+    <!-- Optional navigation -->
+    <div class="slide-nav">
+      <span onclick="changeSlide(0)"></span>
+      <span onclick="changeSlide(1)"></span>
+      <span onclick="changeSlide(2)"></span>
     </div>
   </section>
+  
 
   <!-- Products -->
-  <section class="products" id="products">
+<section class="products" id="products">
     <div class="container">
       <h2>Our Robots</h2>
       <div class="product-grid">
-        <!-- Clickable cards redirecting to individual pages -->
+        <!-- Product 1 -->
         <a href="yantrika.html" class="product-card">
           <img src="images/yantrika.png" alt="Yantrika Robot">
           <h3>Yantrika</h3>
           <p>A compact mobile robot for air monitoring and smart home use.</p>
         </a>
+  
+        <!-- Product 2 -->
         <a href="atmos.html" class="product-card">
           <img src="images/atmos.jpg" alt="Atmos Robot">
           <h3>Atmos</h3>
           <p>Advanced air purification robot with sensors and control system.</p>
         </a>
+  
+        <!-- Product 3 -->
+        <a href="sentinel.html" class="product-card">
+          <img src="images/sentinel.png" alt="Sentinel Robot">
+          <h3>Sentinel</h3>
+          <p>Autonomous surveillance robot with night vision and motion detection.</p>
+        </a>
+  
+        <!-- Product 4 -->
+        <a href="medbot.html" class="product-card">
+          <img src="images/medbot.jpg" alt="MedBot Robot">
+          <h3>MedBot</h3>
+          <p>Healthcare assistant robot for hospitals and care facilities.</p>
+        </a>
+  
+        <!-- Product 5 -->
+        <a href="agribot.html" class="product-card">
+          <img src="images/agribot.jpg" alt="AgriBot Robot">
+          <h3>AgriBot</h3>
+          <p>Smart farming robot designed for crop monitoring and soil analysis.</p>
+        </a>
       </div>
     </div>
   </section>
+  
 
   <!-- Our Story -->
   <section class="our-story" id="our-story">
@@ -75,7 +124,7 @@
       <div class="story-text">
         <h2>Our Story</h2>
         <h3>Building Innovation, One Robot at a Time</h3>
-        <p>Neaurabots was founded with a mission to develop innovative robotics solutions including advanced flight controllers, microcontrollers, and intelligent robots.</p>
+        <p>Neurabots was founded with a mission to develop innovative robotics solutions including advanced flight controllers, microcontrollers, and intelligent robots.</p>
         <p>Our journey began with a small group of passionate engineers who believed in making futuristic tech accessible. Today, we are working on a range of AI-driven robots and embedded systems to revolutionize automation and control.</p>
         <p>From embedded development to smart navigation and AI-powered vision systems, Neaurabots continues to push boundaries in robotics research and real-world implementation.</p>
       </div>
@@ -103,12 +152,30 @@
   </section>
 
   <!-- About -->
-  <section class="about" id="about">
-    <div class="container">
+  <!-- Include in your HTML body -->
+<section id="about" class="about-section">
+    <div class="card">
       <h2>About Us</h2>
-      <p>Neaurabots is a tech startup focused on creating innovative robotics solutions including smart robots, custom flight controllers, and embedded microcontroller systems.</p>
+      <p><strong>Neurabots</strong> was founded in 2025 at the heart of Tripura with a vision to redefine how technology interacts with the real world. What began as a passion project by a group of engineers has now grown into a pioneering startup dedicated to building intelligent and accessible solutions in robotics, AI, and IoT.</p>
+      
+      <h3>🚀 Mission</h3>
+      <p>To build intelligent systems that simplify lives, drive progress, and make cutting-edge technology accessible to all—regardless of background or location.</p>
+  
+      <h3>🌍 Vision</h3>
+      <p>To be a global leader in AI-driven robotics and IoT, transforming everyday challenges into smart, sustainable solutions that improve human life and empower communities.</p>
+  
+      <h3>🔧 Technologies We Work With</h3>
+      <ul>
+        <li>Artificial Intelligence (AI & ML)</li>
+        <li>OpenCV for Computer Vision</li>
+        <li>Python & C++ for algorithm development</li>
+        <li>IoT & Edge Computing</li>
+        <li>Raspberry Pi, Arduino, and microcontrollers</li>
+        <li>Android & Web App Development</li>
+      </ul>
     </div>
   </section>
+  
 
   <!-- Contact -->
   <section class="contact" id="contact">
@@ -127,7 +194,7 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>© 2025 Neaurabots. All rights reserved.</p>
+      <p>© 2025 Neurabots. All rights reserved.</p>
     </div>
   </footer>
 

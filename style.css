@@ -224,6 +224,176 @@
   .btn-primary:hover {
     background-color: #0056b3;
   }
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+}
+
+.card {
+  max-width: 800px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.card h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #0077cc;
+}
+
+.card h3 {
+  margin-top: 24px;
+  color: #222;
+}
+
+.card p, .card ul {
+  line-height: 1.6;
+}
+
+.card ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.card li {
+  margin-bottom: 6px;
+}
+
+.team-photo {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  display: block;
+}
+
+.products {
+  padding: 60px 0;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.products .container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 280px;
+  max-width: 100%;
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  margin: 15px 0 10px;
+  font-size: 1.5rem;
+}
+
+.product-card p {
+  padding: 0 15px 20px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+.hero-slideshow {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  display: block;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 2rem;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.hero-text.left {
+  left: 5%;
+}
+
+.hero-text.right {
+  right: 5%;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.slide-nav {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.slide-nav span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: white;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.slide-nav span.active {
+  opacity: 1;
+  background: #00bfff;
+}
+
   
   /* Products Section */
   .products {

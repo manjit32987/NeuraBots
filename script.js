@@ -10,6 +10,35 @@ document.querySelectorAll('.nav-links a[href^="#"]').forEach(link => {
       }
     });
   });
+
+  let currentSlide = 0;
+const slides = document.querySelectorAll(".slide");
+const navDots = document.querySelectorAll(".slide-nav span");
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove("active");
+    if (navDots[i]) navDots[i].classList.remove("active");
+  });
+  slides[index].classList.add("active");
+  if (navDots[index]) navDots[index].classList.add("active");
+  currentSlide = index;
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+function changeSlide(index) {
+  showSlide(index);
+}
+
+setInterval(nextSlide, 5000); // Change every 5s
+
+// Initialize first slide
+showSlide(currentSlide);
+
   
   
   // 2. Slideshow for "Our Story" section
