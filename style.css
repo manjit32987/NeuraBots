@@ -332,29 +332,34 @@
 }
 
 .slide {
-  display: none;
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
+  opacity: 0;
+  z-index: 0;
   transition: opacity 1s ease-in-out;
 }
 
 .slide.active {
-  display: block;
-  animation: fadeIn 1s ease-in-out;
+  opacity: 1;
+  z-index: 1;
 }
 
 .hero-text {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   color: white;
   padding: 2rem;
-  max-width: 400px;
+  max-width: 420px;
   border-radius: 10px;
+  font-size: 1.2rem;
+  animation: slideInText 1s ease-in-out;
 }
 
 .hero-text.left {
@@ -365,9 +370,15 @@
   right: 5%;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+@keyframes slideInText {
+  from {
+    opacity: 0;
+    transform: translateY(-50%) translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+  }
 }
 
 .slide-nav {
@@ -377,6 +388,7 @@
   transform: translateX(-50%);
   display: flex;
   gap: 10px;
+  z-index: 10;
 }
 
 .slide-nav span {
@@ -393,6 +405,7 @@
   opacity: 1;
   background: #00bfff;
 }
+
 
   
   /* Products Section */
